@@ -1,7 +1,9 @@
 import React from "react";
 import faker from "faker";
 
-const CommentDetail = () => {
+const CommentDetail = (props) => {
+  console.log(props);
+  const avatarName = [faker.name.firstName];
   return (
     <div className="ui container comments">
       <div className="comment">
@@ -9,9 +11,8 @@ const CommentDetail = () => {
           <img alt="avatar" src={faker.image.avatar()} />
         </a>
         <div className="content">
-          <a href="/" className="author">
-            Sam
-          </a>
+          <a href="/" className="author"></a>
+          {props.author}
           <div className="metadata">
             <span className="date"> Today at 6:00PM</span>
           </div>

@@ -8,10 +8,10 @@ import CommentDetail from "./CommentDetail";
 const App = () => {
   return (
     <React.Fragment>
-      <CommentDetail />
-      <CommentDetail />
-      <CommentDetail />
-      <CommentDetail />
+      <CommentDetail author="Sam" />
+      <CommentDetail author=" Alex" />
+      <CommentDetail author="Jane" />
+      <CommentDetail author="Alexis" />
     </React.Fragment>
   );
 };
