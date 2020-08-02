@@ -2,8 +2,10 @@ import React from "react";
 import faker from "faker";
 
 const CommentDetail = (props) => {
+  //author, timeAgo, avatar, comment are the props available
   console.log(props);
-  const avatarName = [faker.name.firstName];
+
+  // const avatarName = [faker.name.firstName];
   return (
     <div className="ui container comments">
       <div className="comment">
@@ -12,11 +14,11 @@ const CommentDetail = (props) => {
         </a>
         <div className="content">
           <a href="/" className="author"></a>
-          {props.author}
+          {faker.internet.userName()}
           <div className="metadata">
-            <span className="date"> Today at 6:00PM</span>
+            <span className="date"> {faker.date.month()}</span>
           </div>
-          <div className="text"> Nice blog post!</div>
+          <div className="text"> {faker.hacker.phrase()}</div>
         </div>
       </div>
     </div>
