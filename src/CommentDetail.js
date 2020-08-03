@@ -1,5 +1,4 @@
 import React from "react";
-import faker from "faker";
 
 const CommentDetail = (props) => {
   //author, timeAgo, avatar, comment are the props available
@@ -10,15 +9,15 @@ const CommentDetail = (props) => {
     <div className="ui container comments">
       <div className="comment">
         <a href="/" className="avatar">
-          <img alt="avatar" src={faker.image.avatar()} />
+          <img alt="avatar" src={props.avatar} />
         </a>
         <div className="content">
           <a href="/" className="author"></a>
-          {faker.internet.userName()}
+          {props.author}
           <div className="metadata">
-            <span className="date"> {faker.date.month()}</span>
+            <span className="date"> {props.timeAgo}</span>
           </div>
-          <div className="text"> {faker.hacker.phrase()}</div>
+          <div className="text"> {props.comment}</div>
         </div>
       </div>
     </div>
