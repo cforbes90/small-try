@@ -12,9 +12,7 @@ export default function ApprovalCard(props) {
           <Image floated="right" size="mini" src="" />
           <Card.Header></Card.Header>
           <Card.Meta></Card.Meta>
-          <Card.Description>
-            <strong>best friends</strong>
-          </Card.Description>
+          <Card.Description></Card.Description>
         </Card.Content>
         <Card.Content extra>
           <div className="ui two buttons">

@@ -12,6 +12,11 @@ const App = () => {
   return (
     <React.Fragment>
       <ApprovalCard>
+        <div>
+          <h4> Warning!</h4>Are you sure you want to do this?
+        </div>
+      </ApprovalCard>
+      <ApprovalCard>
         <CommentDetail
           avatar={faker.image.avatar()}
           author={faker.internet.userName()}
